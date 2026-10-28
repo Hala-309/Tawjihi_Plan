@@ -1,0 +1,86 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"><title>منصة التوجيهي - نسخة تجريبية</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#eaf0f5;--card:#ffffff;--tx:#0f172a;--mut:#64748b;--pr:#1d4ed8;--bd:#cbd5e1;--ok:#15803d;--warn:#b45309;--bad:#b91c1c;--okb:#dcfce7;--warnb:#fef3c7;--badb:#fee2e2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--card:#111a2e;--tx:#e5eaf3;--mut:#94a3b8;--pr:#60a5fa;--bd:#2a3856;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171;--okb:#12301f;--warnb:#3a2c0b;--badb:#3b1414}}
+:root[data-theme="dark"]{--bg:#0b1220;--card:#111a2e;--tx:#e5eaf3;--mut:#94a3b8;--pr:#60a5fa;--bd:#2a3856;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171;--okb:#12301f;--warnb:#3a2c0b;--badb:#3b1414}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--tx);font:16px/1.6 Tajawal,system-ui,Tahoma,sans-serif;display:flex;flex-direction:column;height:100dvh}
+.bar{background:var(--card);border-bottom:1px solid var(--bd);padding:8px max(16px,env(safe-area-inset-right)) 8px max(16px,env(safe-area-inset-left))}
+.bar b{display:block;font-size:15px}.bar .n{color:var(--mut);font-size:13px;font-weight:400}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-top:6px;padding-bottom:2px;-webkit-overflow-scrolling:touch}
+.tabs button{flex:0 0 auto;padding:8px 14px;border-radius:10px;border:1px solid var(--bd);background:transparent;color:var(--tx);font:inherit;font-weight:700;cursor:pointer;min-height:40px;white-space:nowrap}
+.tabs button[aria-pressed="true"]{background:var(--pr);color:#fff;border-color:var(--pr)}
+.tabs button:focus-visible{outline:2px solid var(--pr);outline-offset:2px}
+iframe{flex:1;width:100%;border:0;background:var(--bg)}[hidden]{display:none!important}
+.pg{flex:1;overflow:auto;padding:16px max(16px,env(safe-area-inset-right)) 40px max(16px,env(safe-area-inset-left))}
+.wrap{max-width:760px;margin:0 auto}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:12px}
+h2{font-size:21px;margin:4px 0 8px}h3{font-size:17px;margin:0 0 6px}p{margin:6px 0}.mut{color:var(--mut)}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:700}
+.ok{background:var(--okb);color:var(--ok)}.warn{background:var(--warnb);color:var(--warn)}.bad{background:var(--badb);color:var(--bad)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.k{background:var(--bg);border-radius:10px;padding:10px}.k .v{font-size:24px;font-weight:800}
+table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid var(--bd);text-align:start;font-size:14px}th{color:var(--mut);font-weight:600}.tw{overflow-x:auto}
+.step{display:flex;gap:10px;align-items:flex-start;margin:8px 0}.num{flex:0 0 30px;height:30px;border-radius:50%;background:var(--pr);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.bar2{height:8px;border-radius:4px;background:var(--bd);margin-top:6px}.bar2 i{display:block;height:8px;border-radius:4px;background:var(--pr)}
+</style>
+<div class="bar"><b>منصة التوجيهي <span class="n">· نسخة تجريبية ببيانات وهمية</span></b>
+<div class="tabs" role="group" aria-label="أقسام العرض">
+<button type="button" data-i="0" aria-pressed="true">نظرة سريعة</button><button type="button" data-i="1" aria-pressed="false">خطة الدراسة</button><button type="button" data-i="2" aria-pressed="false">الاختبارات</button><button type="button" data-i="3" aria-pressed="false">تقرير ولي الأمر</button><button type="button" data-i="4" aria-pressed="false">لوحة المدرسة</button></div></div>
+
+<div class="pg" id="v0"><div class="wrap">
+<div class="box"><h2>منصة دراسة لطلاب التوجيهي العلمي</h2><p class="mut">كل ما تراه هنا بيانات وهمية للعرض فقط. التطبيقان الأول والثاني تفاعليان: جرّب أي زر.</p></div>
+<div class="box"><h3>جولة سريعة (دقيقتان)</h3>
+<div class="step"><span class="num">1</span><div><b>خطة الدراسة</b><br><span class="mut">مهام اليوم، مؤقت الدراسة، ملخص التقدم، ونقاط وحوافز. جرّب أيضا «المزيد» ثم «المتابعة».</span></div></div>
+<div class="step"><span class="num">2</span><div><b>الاختبارات</b><br><span class="mut">ابدأ «التدريب الذكي» أو «امتحان تجريبي» لأي مادة. الأخطاء تعود للطالب في الوقت المناسب. في تبويب «النتائج» تحليل نقاط الضعف.</span></div></div>
+<div class="step"><span class="num">3</span><div><b>تقرير ولي الأمر</b><br><span class="mut">مثال على التقرير الأسبوعي الذي يصل للأهل بالبريد.</span></div></div>
+<div class="step"><span class="num">4</span><div><b>لوحة المدرسة</b><br><span class="mut">مثال على ما تراه الإدارة: كل الطلاب، النشاط، والاشتراك.</span></div></div></div>
+<div class="box"><h3>ما الذي يعمل فعلا اليوم؟</h3>
+<div class="tw"><table><tr><th>الميزة</th><th>الحالة</th></tr>
+<tr><td>خطة يومية لثماني مواد، حوالي 1240 سؤالا</td><td><span class="pill ok">مبني ومُجرَّب</span></td></tr>
+<tr><td>دفتر أخطاء ومراجعة ذكية وامتحانات تجريبية</td><td><span class="pill ok">مبني ومُجرَّب</span></td></tr>
+<tr><td>حسابات حقيقية لكل طالب، رابط ولي الأمر، لوحة المدرسة</td><td><span class="pill ok">مبني ومُجرَّب</span></td></tr>
+<tr><td>تقرير أسبوعي وتذكير بالبريد</td><td><span class="pill warn">يلزم ربط خدمة بريد</span></td></tr>
+<tr><td>معلم ذكي وتوليد أسئلة (ذكاء اصطناعي)</td><td><span class="pill warn">لم يُختبر بمفتاح حقيقي</span></td></tr>
+<tr><td>الدفع</td><td><span class="pill warn">يدوي حاليا</span></td></tr>
+<tr><td>مراجعة المعلمين للأسئلة</td><td><span class="pill bad">لم تتم بعد</span></td></tr>
+<tr><td>الفرع الأدبي</td><td><span class="pill">قريبا</span></td></tr></table></div></div>
+<div class="box"><h3>بصراحة</h3><p>هذه نسخة عرض. لا يوجد مستخدمون حقيقيون بعد، وأسئلة المنصة كُتبت بمساعدة الذكاء الاصطناعي وتنتظر مراجعة معلمين قبل الاعتماد.</p></div>
+</div></div>
+
+<iframe id="f1" src="planner.html" title="خطة الدراسة" hidden></iframe>
+<iframe id="f2" src="quiz.html" title="الاختبارات" hidden></iframe>
+
+<div class="pg" id="v3" hidden><div class="wrap">
+<div class="box"><span class="pill warn">مثال على رسالة بريد</span><h2>التقرير الأسبوعي: طالبة (مثال)</h2><p class="mut">من الخميس الماضي إلى اليوم</p>
+<div class="grid"><div class="k"><div class="mut">أيام الدراسة</div><div class="v">5 من 7</div></div><div class="k"><div class="mut">المهام المنجزة</div><div class="v">17</div></div><div class="k"><div class="mut">وقت الدراسة</div><div class="v">9 س 40 د</div></div><div class="k"><div class="mut">معدل الاختبارات</div><div class="v">72%</div></div></div>
+<p>أسئلة غلط بانتظار المراجعة: <b>8</b></p>
+<h3>أضعف الدروس</h3><ul><li>كيمياء: الاتزان الكيميائي (آخر نتيجة 4/10)</li><li>رياضيات: قواعد الاشتقاق (5/10)</li><li>فيزياء: الزخم الخطي (6/10)</li></ul>
+<p class="mut">الأرقام تعتمد على ما تسجله الطالبة بالتطبيق، وهي مؤشر وليست تقييما رسميا. في كل رسالة رابط لإيقاف التقرير.</p></div>
+<div class="box"><h3>كيف يصل للأهل؟</h3><p class="mut">تدخل الطالبة بريد ولي الأمر من صفحة «حسابي»، فيصله التقرير كل جمعة. وهناك أيضا رابط متابعة للقراءة فقط. ميزة التقرير مخصصة لمشتركي Premium.</p></div>
+</div></div>
+
+<div class="pg" id="v4" hidden><div class="wrap">
+<div class="box"><span class="pill warn">بيانات وهمية للعرض</span><h2>لوحة المدرسة (المشرف)</h2><p class="mut">تظهر لإدارة المدرسة وللمعلمين كل الطلاب وآخر نشاطهم.</p>
+<div class="grid"><div class="k"><div class="mut">الطلاب</div><div class="v">8</div></div><div class="k"><div class="mut">نشطون هذا الأسبوع</div><div class="v">6</div></div><div class="k"><div class="mut">معدل الاختبارات</div><div class="v">68%</div></div><div class="k"><div class="mut">مشتركون Premium</div><div class="v">3</div></div></div></div>
+<div class="box tw"><table><tr><th>الطالب</th><th>آخر نشاط</th><th>مهام</th><th>أخطاء</th><th>الاشتراك</th></tr>
+<tr><td>طالب (مثال 1)</td><td>اليوم</td><td>42</td><td>5</td><td><span class="pill ok">Premium</span></td></tr>
+<tr><td>طالب (مثال 2)</td><td>اليوم</td><td>37</td><td>8</td><td><span class="pill">مجاني</span></td></tr>
+<tr><td>طالب (مثال 3)</td><td>أمس</td><td>29</td><td>11</td><td><span class="pill ok">Premium</span></td></tr>
+<tr><td>طالب (مثال 4)</td><td>أمس</td><td>24</td><td>6</td><td><span class="pill">مجاني</span></td></tr>
+<tr><td>طالب (مثال 5)</td><td>قبل 3 أيام</td><td>18</td><td>14</td><td><span class="pill">مجاني</span></td></tr>
+<tr><td>طالب (مثال 6)</td><td>قبل 3 أيام</td><td>15</td><td>9</td><td><span class="pill ok">Premium</span></td></tr>
+<tr><td>طالب (مثال 7)</td><td>قبل 9 أيام</td><td>7</td><td>3</td><td><span class="pill">مجاني</span></td></tr>
+<tr><td>طالب (مثال 8)</td><td>لم يبدأ</td><td>0</td><td>0</td><td><span class="pill">مجاني</span></td></tr></table></div>
+<div class="box"><h3>ماذا يستطيع المشرف؟</h3><ul><li>رؤية تقدم أي طالب بنفس عرض ولي الأمر.</li><li>تفعيل اشتراك Premium بعد التأكد من الدفع.</li><li>إعادة تعيين كلمة سر طالب نسي كلمته.</li></ul></div>
+</div></div>
+<script>
+const V=[document.getElementById('v0'),document.getElementById('f1'),document.getElementById('f2'),document.getElementById('v3'),document.getElementById('v4')],B=[].slice.call(document.querySelectorAll('.tabs button'));
+function show(i){V.forEach((x,k)=>{x.hidden=k!=i});B.forEach((b,k)=>b.setAttribute('aria-pressed',k==i))}
+B.forEach(b=>b.onclick=()=>show(+b.dataset.i));
+function hook(){try{const d=document.getElementById('f1').contentDocument;if(!d||d.__q)return;d.__q=1;d.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href*="quiz.html"]');if(!a)return;e.preventDefault();const h=(a.getAttribute('href').split('#')[1]||'');if(h)document.getElementById('f2').src='quiz.html?r='+Date.now()+'#'+h;show(2)},true)}catch(x){}}
+document.getElementById('f1').addEventListener('load',hook);B[1].addEventListener('click',()=>setTimeout(hook,50));setInterval(hook,1500);
+show(0);
+</script>
+</html>
